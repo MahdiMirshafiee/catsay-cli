@@ -1,7 +1,7 @@
 # Catsay CLI
-# ![License](https://img.shields.io/badge/license-MIT-green) [![PyPI](https://img.shields.io/pypi/v/catsay-cli)](https://pypi.org/project/catsay-cli/) ![Package Size](https://img.shields.io/badge/size-5.0KB-red)
+# ![License](https://img.shields.io/badge/license-MIT-green) [![PyPI](https://img.shields.io/pypi/v/catsay-cli)](https://pypi.org/project/catsay-cli/) ![Package Size](https://img.shields.io/badge/size-3.8KB-red)
 
-A fun CLI tool inspired by cowsay, but with cute ASCII cats! 🐱
+A fun CLI tool inspired by **cowsay**, but with cute ASCII cats! 🐱
 
 ---
 # 🚀 Features
@@ -22,24 +22,25 @@ pip install catsay-cli
 ```bash
 catsay Hello World!
 ```
-# ![Screenshot](./assets/photos//screenshot.png)
+# ![Screenshot](./assets/photos/simple.png)
 
 **Color Options**
 ```bash
 catsay Hello World! -c red
 catsay Hello World! --color cyan
 ```
-# ![Screenshot](./assets/photos//screenshot.png)
+# ![Screenshot](./assets/photos/color_option%20.png)
 
 ```bash
 catsay --list-colors
 ```
-# ![Screenshot](./assets/photos//screenshot.png)
+# ![Screenshot](./assets/photos/colors.png)
 
 ---
 ## 🆘 Help
 ```bash
 catsay --help
+catsay -h
 ```
 ---
 ## 🛠 Contributing
