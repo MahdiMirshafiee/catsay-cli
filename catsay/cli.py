@@ -6,6 +6,7 @@ from .cat_art import cats
 from rich.console import Console
 from rich.text import Text
 
+console=Console()
 WIDTH = 40
 AVAILABLE_COLORS = [
     "red",
@@ -16,8 +17,8 @@ AVAILABLE_COLORS = [
     "cyan",
     "white",
     "black",
-    "bright_white",
-    "bright_black"
+    "orange1",   
+    "deep_pink4"  
 ]
 
 def make_balloon(text: str) -> str:
@@ -35,13 +36,13 @@ def make_balloon(text: str) -> str:
     return "\n".join(balloon)
 
 def list_colors():
-    Console.print("[bold underline]Colors available:[/bold underline]")
+    console.print("[bold underline]Colors available:[/bold underline]")
     for color in AVAILABLE_COLORS:
-        Console.print(f"[{color}]{color}[/]")
+        console.print(f"[{color}]{color}[/]")
 
 def main():
     parser = argparse.ArgumentParser(prog="catsay", description="Catsay CLI: Display your message with a talking ASCII cat!")
-    parser.add_argument("message", nargs="+", help="The message your cat will say")
+    parser.add_argument("message", nargs="*", help="The message your cat will say")
     parser.add_argument("-c", "--color", help="Color of the output text (e.g. red, blue, magenta)")
     parser.add_argument("--list-colors", action="store_true", help="Show all supported colors")
     args = parser.parse_args()
@@ -62,9 +63,9 @@ def main():
 
     if args.color:
         if args.color not in AVAILABLE_COLORS:
-            Console.print(f"[red]❌ Color '{args.color}' is not valid. To see available colors, use:[/] [bold]catsay --list-colors[/bold]")
+            console.print(f"[red]catsay -c redColor '{args.color}' is not valid. To see available colors, use:[/] [bold]catsay --list-colors[/bold]")
             return
-        Console.print(Text(result, style=args.color))
+        console.print(Text(result, style=args.color))
     else:
         builtins.print(result)
 
