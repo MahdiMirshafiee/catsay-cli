@@ -1,0 +1,21 @@
+[project]
+name = "catsay-cli"
+version = "1.0.0"
+description = "A fun CLI tool that prints cat ASCII art with your message."
+authors = [{name = "Mahdi", email = "mirshafieemahdi001@gmail.com"}]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+dependencies = [
+    "rich>=13.0.0"
+]
+
+[project.scripts]
+catsay = "catsay.cli:main"
+
+[tool.setuptools]
+packages = ["catsay"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
