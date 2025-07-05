@@ -12,21 +12,36 @@ A fun CLI tool inspired by cowsay, but with cute ASCII cats! 🐱
 ---
 ## 📦 Installation
 
-From PyPI
-pip install catsay-cli---
-
+**From PyPI**
+```bash
+pip install catsay-cli
+```
+---
 ## ⚙️ Usage
-Simple
-catsay 'Hello World!'![Screenshot](./assets/photos//screenshot.png)
+**Simple**
+```bash
+catsay Hello World!
+```
+# ![Screenshot](./assets/photos//screenshot.png)
 
-Color Options
-catsay 'Hello World!' -c red![Screenshot](./assets/photos//screenshot.png)
+**Color Options**
+```bash
+catsay Hello World! -c red
+catsay Hello World! --color cyan
+```
+# ![Screenshot](./assets/photos//screenshot.png)
 
-catsay --list-colors![Screenshot](./assets/photos//screenshot.png)
+```bash
+catsay --list-colors
+```
+# ![Screenshot](./assets/photos//screenshot.png)
 
 ---
 ## 🆘 Help
-catsay --help---
+```bash
+catsay --help
+```
+---
 ## 🛠 Contributing
 Feel free to contribute by:
 
